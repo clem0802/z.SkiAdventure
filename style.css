@@ -1,0 +1,149 @@
+/* write your css styles below */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  h1,h2,h3 {
+    font-family: "Nunito", sans-serif;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  p,a {
+    font-family: "Nunito", sans-serif;
+  }
+  input, textarea {
+    background-color: #E2E5ED;
+    border-radius: 5px;
+    border:none;
+    padding:8px 16px;
+  }
+  
+  
+  /* ----------------------------- */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+  .left {
+    display: grid;
+    grid-template-rows: 100px 900px 100px;
+    padding: 50px 40px
+  }
+  .grid-header {
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .grid-main {
+    /* background-color: blueviolet; */
+    display: grid;
+    justify-content: stretch;
+  }
+  .info {
+    /* background-color: yellow; */
+    padding: 10px 0;
+  }
+  .name-form {
+    display: grid;
+  }
+  .email-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .email p {
+    color: red;
+    font-size: small;
+  }
+  .email {
+    margin-right: 8px;;
+  }
+  .password {
+    margin-left: 8px;
+  }
+  .mail {
+    /* background-color: coral; */
+    display: grid;
+    width: 100%;
+  }
+  .pwd {
+    /* background-color: cyan; */
+    display: grid;  
+    width: 100%;
+  }
+  
+  
+  /* .control {
+    outline: none;
+  } */
+  /* .control input[type=radio]:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background-color: red;
+    outline: none;
+  } */
+  
+  .bio {
+    /* background-color: rgb(70, 197, 236); */
+  }
+  .select {
+    border: none;
+  }
+  #select {
+    appearance: none;
+    border: none;
+      outline: none;
+    padding: 5px;
+  
+    /* URL shortener */
+    background-image: url('shorturl.at/qsFX9');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+  }
+  
+  
+  .grid-footer {
+    /* background-color: orangered; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-light {
+    width: 80%;
+    margin-right: 8px;
+  }
+  .btn-success {
+    width: 80%;
+    margin-left: 8px;
+  }
+  
+  
+  .right {
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-row: span 3;
+    background-image: url("./assets/ski.jpeg");
+    background-position: top right;
+    background-size: cover;
+    padding: 100px;
+  }
+  .sidebar {
+    /* background: green; */
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #4e4f50;
+  }
+  input:focus{
+    border:solid 5px cyan;
+    background-color: greenyellow;
+  }
+  
