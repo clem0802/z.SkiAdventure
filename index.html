@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The ultimate ski adventure</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- start here -->
+    <div class="grid-container">
+      <form class="left">
+
+          <div class="grid-header"> <!-- HEADER -->
+            <h2>Register for the ultimate ski adventure</h2>
+          </div>
+
+          <div class="grid-main"> <!-- MAIN -->
+              <!-- Your basic info (main-1)-->
+              <div class="info">
+                  <h3>Your basic info</h3><br>
+                  <div class="name-form">
+                        <label for="name" class="required">Name and surname</label>
+                        <input type="text">
+                        <style>.required:after {
+                          content: " *";
+                        }
+                        </style>
+                  </div><br>
+
+                  <div class="email-container">
+                    <div class="email">
+                        <label for="exampleInputEmail" class="required">Email</label><br>
+                        <input type="email" placeholder="example@mail.com" class="mail" required>
+                        <style>.required:after {
+                          content: " *";
+                        }
+                        </style>
+                        <p>this field is required</p>
+                    </div>
+                    <div class="password">
+                        <label for="exampleInputPassword" class="required">Password</label><br>
+                        <input type="password" placeholder="****" class="pwd" required>
+                        <style>.required:after {
+                          content: " *";
+                        }
+                        </style>
+                    </div>
+                  </div>
+
+                  <div>Age<br>
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        Under 18
+                      </label><br>
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        18 and over
+                      </label>
+                    </div>
+                  </div>
+              </div>
+
+
+              <!-- Tell us about yourself (main-2)-->
+              <div class="bio">
+                <h3>Tell us about yourself</h3><br>
+
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea3">Your biography</label><br>
+                  <textarea class="form-control" style="background-color:#E2E5ED" id="exampleFormControlTextarea3" rows="3"></textarea>
+                </div><br>
+                
+                <div class="select">
+                  <label for="location">Select location</label>
+                  <select id="select" class="form-control" style="background-color:#E2E5ED">
+                    <option value="Mayrhofen">Mayrhofen</option>
+                    <option value="Pyrénées">Pyrénées</option>
+                    <option value="Alpes">Alpes</option>
+                    <option value="Val d'Isère">Val d'Isère</option>
+                    <option value="Mont-Blanc">Mont-Blanc</option>
+                    <option value="Strasbourg">Strasbourg</option>
+                    <option value="Strasbourg">Franche-Comté</option>
+                  </select>
+                </div><br>
+
+                <div>
+                  <label>What equipments would you like to rent? </label>
+                  <div>
+                    <label><input type="checkbox" value="" class="checkbox"> Skis</label>
+                  </div>
+                  <div>
+                    <label><input type="checkbox" value="" class="checkbox"> Helmet</label>
+                  </div>
+                  <div>
+                    <label><input type="checkbox" value="" class="checkbox"> Goggles</label>
+                  </div>
+                  <div>
+                    <label><input type="checkbox" value="" class="checkbox"> Ski boots</label>
+                  </div>
+                  <div>
+                    <label><input type="checkbox" value="" class="checkbox"> Ski poles</label>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+
+          <div class="grid-footer"> <!-- FOOTER -->
+            <button type="button" class="btn btn-light btn-lg" style="border:solid black 1px">Reset</button>
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+          </div>
+      </form>
+
+      <div class="right">
+          <div class="sidebar">
+            <h1>Epic experience <br/>in the snow</h1>
+          </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
